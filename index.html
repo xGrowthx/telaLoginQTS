@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="materials/style.css">
+    <script src="script.js"></script>
+    <title>Tela de Login</title>
+</head>
+<body>
+    <div id="welcome">
+        <h1>Bem-Vindo de volta!</h1>
+    </div>
+
+    <hr>
+
+    <form id="formLogin" action="#">
+        <fieldset>
+            <legend>Login</legend>
+            <label for="nomeUser">Digita seu Nome de usuário:
+                <div class="alert" onmouseover="mostrarTexto()">*
+                    <span class="hiddenText" id="popupName">Este campo é obrigatório!</span>
+                </div>
+    <br>
+            </label>
+            <input class="formInput" id="nomeUser"  type="text" placeholder="Digita seu nome de usuário aqui...">
+
+    <br>
+    <br>
+
+            <label for="password">Digite sua Senha:
+                <div class="alert" onmouseover="mostrarTextoPass()">*
+                    <span class="hiddenText" id="popupPass">Este campo é obrigatório!</span>
+                </div>
+            </label>
+    <br>
+            <input class="formInput" id="password" type="password" placeholder="Digite sua senha aqui...">
+            <img id="olhoPass" onclick="mostrarPass()" src="materials/outline_visibility_black_18dp.png">
+        </fieldset>    
+        <input id="btnSubmit" type="button" value="ENTRAR">
+
+    <br>
+        <a href="#">Esqueceu a sua senha?</a>
+        <a href="#">Cadastrar-se</a>
+    </form>
+        
+</body>
+</html>

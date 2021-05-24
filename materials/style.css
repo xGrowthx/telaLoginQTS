@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+*{
+    font-family: 'Oswald', sans-serif;
+}
+
+#welcome{
+    text-align: center;
+    position: sticky;
+}
+
+
+hr{
+
+    margin-bottom: 40px;
+    box-shadow: 5px 5px 10px black;
+
+}
+
+#formLogin{
+    position: absolute;
+    left: 50%;
+    bottom: 40%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+fieldset{
+    height: 160px;
+    width: 450px;
+    border-color: rgba(0, 0, 255, 70%);
+    border-radius: 4px;
+    box-shadow: 0px 5px 10px rgba(10, 10, 10);
+
+}
+
+legend{
+    margin-left: 190px;
+    font-size: large;
+    text-align: center;
+}
+
+.formInput{
+    width: 240px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    border-color: blue;
+}
+
+.alert{
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.alert .hiddenText{
+    font-family: Arial, Helvetica, sans-serif;
+    visibility: hidden;
+    width: 160px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.alert .hiddenText::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.alert .show{
+    visibility: visible;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+#olhoPass{
+    cursor: pointer;
+}
+
+#btnSubmit{
+    float: right;
+    margin: 10px;
+    border-color: blue;
+    border-radius: 5px;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    box-shadow: 0px 5px 10px rgb(10, 10, 10);
+
+}
+
+a{
+    margin: 10px;
+}
+
+
